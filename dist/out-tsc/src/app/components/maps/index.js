@@ -17,7 +17,9 @@ MapsModule.decorators = [
                     ng_bootstrap_1.NgbModule,
                     routes_1.MapsRouteModule,
                     shared_1.SharedModule,
-                    core_2.AgmCoreModule.forRoot()
+                    core_2.AgmCoreModule.forRoot({
+                        apiKey: 'AIzaSyCMI9FmsaIzTkYWF3WlcXF4yBte09lNII0'
+                    })
                 ],
                 declarations: [
                     component_1.MapsComponent

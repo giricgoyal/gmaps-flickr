@@ -177,7 +177,7 @@ class MapsModuleInjector extends import0.ɵNgModuleInjector<import1.MapsModule> 
           component: import37.MapsComponent
         }
     ]];
-    this._LAZY_MAPS_API_CONFIG_37 = (undefined as any);
+    this._LAZY_MAPS_API_CONFIG_37 = {apiKey: 'AIzaSyCMI9FmsaIzTkYWF3WlcXF4yBte09lNII0'};
     return this._MapsModule_24;
   }
   getInternal(token:any,notFoundResult:any):any {

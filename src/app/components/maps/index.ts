@@ -11,7 +11,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule,
     MapsRouteModule,
     SharedModule,
-    AgmCoreModule.forRoot()
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCMI9FmsaIzTkYWF3WlcXF4yBte09lNII0'
+    })
   ],
   declarations: [
     MapsComponent

@@ -36,7 +36,9 @@ MapsModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */],
             __WEBPACK_IMPORTED_MODULE_3__routes__["a" /* MapsRouteModule */],
             __WEBPACK_IMPORTED_MODULE_1__shared__["a" /* SharedModule */],
-            __WEBPACK_IMPORTED_MODULE_4_angular2_google_maps_core__["AgmCoreModule"].forRoot()
+            __WEBPACK_IMPORTED_MODULE_4_angular2_google_maps_core__["AgmCoreModule"].forRoot({
+                apiKey: 'AIzaSyCMI9FmsaIzTkYWF3WlcXF4yBte09lNII0'
+            })
         ],
         declarations: [
             __WEBPACK_IMPORTED_MODULE_2__component__["a" /* MapsComponent */]
