@@ -1,7 +1,9 @@
-# CliUniversalDemo
+# Gmaps-flickr Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+## install dependencies
+
+Run `npm install` to install dependencies.
 
 ## Start the server
 
-Run `npm run start` to start the server. Navigate to `http://localhost:4000/`.
+Run `npm start` to start the server. Navigate to `http://localhost:4000/`.
