@@ -8109,7 +8109,7 @@ function View_MapsComponent_2(l) {
         var co = v.component;
         var currVal_0 = co.flickrData.photo;
         ck(v, 3, 0, currVal_0);
-        var currVal_1 = co.flickrData;
+        var currVal_1 = (co.flickrData && (co.flickrData.photo.length > 0));
         ck(v, 6, 0, currVal_1);
     }, null);
 }
@@ -8261,9 +8261,9 @@ function View_MapsComponent_0(l) {
         ck(v, 8, 0, currVal_1, currVal_2, currVal_3, currVal_4);
         var currVal_5 = (co.lat && co.lng);
         ck(v, 17, 0, currVal_5);
-        var currVal_6 = co.flickrData;
+        var currVal_6 = (co.flickrData && (co.flickrData.photo.length > 0));
         ck(v, 23, 0, currVal_6);
-        var currVal_7 = !co.flickrData;
+        var currVal_7 = (!co.flickrData || (co.flickrData && (co.flickrData.photo.length == 0)));
         ck(v, 26, 0, currVal_7);
     }, function (ck, v) {
         var currVal_0 = true;

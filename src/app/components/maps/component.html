@@ -7,17 +7,17 @@
             </sebm-google-map>
         </div>
     </div>
-    <div *ngIf="flickrData" class="row photos-container">
+    <div *ngIf="flickrData && flickrData.photo.length > 0" class="row photos-container">
         <div *ngFor="let photo of flickrData.photo; let i = index" class="col col-12 col-md-3 img">
             <img src={{getPhotoLink(photo)}} alt="{{photo.title}}" />
         </div>
-        <div *ngIf="flickrData" class="col col-12 text-center">
+        <div *ngIf="flickrData  && flickrData.photo.length > 0" class="col col-12 text-center">
             <div class="pagination-container">
                 <ngb-pagination [collectionSize]="flickrData.total" [(page)]="flickrData.page" [maxSize]="5" [rotate]="true" [boundaryLinks]="true" (pageChange)="pageChanged($event)"></ngb-pagination>
             </div>
         </div>
     </div>
-    <div *ngIf="!flickrData" class="row photos-container">
+    <div *ngIf="!flickrData || (flickrData && flickrData.photo.length == 0)" class="row photos-container">
         <div class="col text-center">
             No photos available for this place.
         </div>
