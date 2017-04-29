@@ -1,0 +1,23 @@
+.col {
+    padding: 0px;
+}
+
+.sebm-google-map-container {
+    height: calc(50vh - 30px);
+}
+
+.photos-container {
+    max-height: calc(50vh - 30px);
+    overflow: auto;
+    .img {
+        padding: 10px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.pagination-container {
+    display: inline-block;
+    margin: auto;
+}
